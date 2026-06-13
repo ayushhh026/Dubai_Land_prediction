@@ -110,7 +110,7 @@ A complete **Multiple Linear Regression** pipeline that predicts housing prices 
 
 Median was selected as it better preserves the right-skewed distribution of `total_bedrooms`.
 
-![Imputation Comparison — No Imputation vs Mean vs Median](ADD_IMPUTATION_SS_URL)
+<img width="1645" height="855" alt="67d84a16-bfa3-48a2-ae49-011e6afe66b1" src="https://github.com/user-attachments/assets/82088085-ea1a-4a76-a5ab-b2d7edd1080c" />
 
 ---
 
@@ -126,7 +126,7 @@ Key findings from the heatmap:
 
 This directly motivated the feature engineering step — replacing the 4 raw count columns with ratio features to break multicollinearity.
 
-![Correlation Heatmap](ADD_HEATMAP_SS_URL)
+<img width="668" height="551" alt="84376444-9cce-4d40-9c4b-3ca1e94f92aa" src="https://github.com/user-attachments/assets/ee147604-f4b4-45ea-9e39-4eb670aa3634" />
 
 ---
 
@@ -172,17 +172,17 @@ Used to check **homoscedasticity** (equal variance of errors). A good model show
 
 The funnel pattern visible here indicates **heteroscedasticity** — variance increases as predicted value grows. This is a known limitation of linear regression on this dataset and suggests tree-based models would fit better.
 
-![Residuals vs Predicted](ADD_RESIDUALS_SS_URL)
+<img width="582" height="448" alt="1792dddd-7047-40a8-9a95-14860be60005" src="https://github.com/user-attachments/assets/cd870010-d3ef-4d08-8523-3dd9a9c77e6b" />
 
 ### 2. Actual vs Predicted
 Scatter of `y_test` vs `y_pred`. A perfect model would show all points on a diagonal line. The vertical cluster at 500,001 reflects the dataset's price cap — all houses above the cap are recorded as 500,001, creating an artificial ceiling effect.
 
-![Actual vs Predicted](ADD_ACTUAL_VS_PRED_SS_URL)
+<img width="551" height="428" alt="500fdede-c8f6-451b-acec-616c92e6666e" src="https://github.com/user-attachments/assets/ca179777-504a-472d-98ac-bbda74ed9464" />
 
 ### 3. Residuals Distribution — Normality Check
 Residuals should follow a normal distribution centered at 0 for linear regression assumptions to hold. The histogram with KDE shows the residuals are approximately normal and centered near 0 — confirming no systematic bias in predictions.
 
-![Residuals Distribution — Normality Check](ADD_RESIDUALS_DIST_SS_URL)
+<img width="571" height="433" alt="94438cef-22a6-4379-9d7c-342df6d6dee7" src="https://github.com/user-attachments/assets/0e41194a-98f6-4801-8229-1f7c199036f0" />
 
 ---
 
